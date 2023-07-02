@@ -1,8 +1,6 @@
 # Node.js
 /node_modules
 
-
-
 # IDE/Editor specific
 .idea
 .vscode
@@ -16,3 +14,7 @@
 
 # Windows
 Thumbs.db
+
+# local netlify folder
+
+.netlify
