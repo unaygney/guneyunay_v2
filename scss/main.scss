@@ -157,7 +157,18 @@ header {
 
     .content {
       height: 60vh;
+      h1{
+        padding: 1rem 0;
+      }
 
+      p{
+        padding: .3rem 0;
+        a{
+          display: block;
+          padding: 1rem 0;
+        }
+      }
+   
 
       nav {
         margin-top: auto;
