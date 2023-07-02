@@ -1,0 +1,174 @@
+@import 'variables';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+
+}
+
+header {
+  display: flex;
+
+  h1 {
+    font-size: 6rem;
+    line-height: 1.5;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 600;
+    color: $bg-color;
+
+  }
+
+  .side-bar {
+    width: 350px;
+    background-color: $bg-color;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+      width: 207px;
+      height: 207px;
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      background-color: #fff;
+
+    }
+
+    .sidebar-pic {
+      width: 200px;
+      height: 200px;
+      background-image: url(/pictures/Guney_unay.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      z-index: 100;
+      border: 5px solid $primary-color;
+      transition: all .3s;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.9;
+        transform: scale(1.1);
+      }
+
+
+
+    }
+  }
+
+  article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $bg-color2;
+
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      margin: 0 1rem;
+    }
+
+
+    p {
+      font-size: 20px;
+
+      a {
+        color: #6C9BCF;
+      }
+    }
+
+    nav {
+      margin-top: 2rem;
+
+      ul {
+        display: flex;
+        gap: 1rem;
+
+        li {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: $primary-color;
+          transition: all .2s;
+
+          &:hover {
+            transform: scale(1.2);
+
+            a {
+              color: $bg-color;
+            }
+          }
+
+          a {
+            color: $bg-color2;
+            display: inline-flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+
+
+
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .side-bar {
+      width: 100%;
+      height: 40vh;
+
+      .sidebar-pic {
+        margin: 1rem;
+      }
+    }
+
+
+    .content {
+      height: 60vh;
+
+
+      nav {
+        margin-top: auto;
+        margin-bottom: 3rem;
+
+        ul {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+
+
+}
