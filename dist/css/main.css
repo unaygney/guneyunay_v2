@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+p {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400; }
+
+header {
+  display: flex; }
+  header h1 {
+    font-size: 6rem;
+    line-height: 1.5;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 600;
+    color: #212A3E; }
+  header .side-bar {
+    width: 350px;
+    background-color: #212A3E;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    header .side-bar::before {
+      width: 207px;
+      height: 207px;
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      background-color: #fff; }
+    header .side-bar .sidebar-pic {
+      width: 200px;
+      height: 200px;
+      background-image: url(/pictures/Guney_unay.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      z-index: 100;
+      border: 5px solid #9BA4B5;
+      transition: all .3s;
+      cursor: pointer; }
+      header .side-bar .sidebar-pic:hover {
+        opacity: 0.9;
+        transform: scale(1.1); }
+  header article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F1F6F9; }
+    header article .content {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      margin: 0 1rem; }
+    header article p {
+      font-size: 20px; }
+      header article p a {
+        color: #6C9BCF; }
+    header article nav {
+      margin-top: 2rem; }
+      header article nav ul {
+        display: flex;
+        gap: 1rem; }
+        header article nav ul li {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #9BA4B5;
+          transition: all .2s; }
+          header article nav ul li:hover {
+            transform: scale(1.2); }
+            header article nav ul li:hover a {
+              color: #212A3E; }
+          header article nav ul li a {
+            color: #F1F6F9;
+            display: inline-flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center; }
+
+@media only screen and (max-width: 480px) {
+  header {
+    flex-direction: column; }
+    header h1 {
+      font-size: 4rem; }
+    header .side-bar {
+      width: 100%;
+      height: 40vh; }
+      header .side-bar .sidebar-pic {
+        margin: 1rem; }
+    header .content {
+      height: 60vh; }
+      header .content nav {
+        margin-top: auto;
+        margin-bottom: 3rem; }
+        header .content nav ul {
+          flex-wrap: wrap; } }

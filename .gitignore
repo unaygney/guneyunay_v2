@@ -1,0 +1,18 @@
+# Node.js
+/node_modules
+
+
+
+# IDE/Editor specific
+.idea
+.vscode
+*.swp
+
+# Sass cache
+.sass-cache
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
